@@ -117,8 +117,9 @@ justify-content: space-between;
 #footer
 {
 height: 185px;
-width: 610px;
-padding-left: 27%;
+width: 1000px;
+align-items: center;
+padding-left: 11%;
 }
 #search,#giftbox,#bell,#arrow,#see-again,#add,#mi,.arrowmark{
     filter: brightness(100);
@@ -131,6 +132,6 @@ width: 13px;
 filter: brightness(6);
 }
 #connect1{
-padding-left: 25%;
+padding-left: 50%;
 padding-top: 150px;
 }
