@@ -1,137 +1,160 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-  *{
-    font-family: 'Poppins', sans-serif;;
-    margin: 0px;
-    padding: 0px;
-  }
-body
-{
- background-color: #000000;
- color: rgb(255, 255, 255);
- background-image: url(assets/Title-Image.png);
- background-repeat: no-repeat;
- background-size: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.navbar{
-float: left;
-padding-top: 11px;
-padding-right:3px;
-padding-left:32px ;
+
+body {
+    background-color: #000000;
+    color: #fff;
+    background-image: url(assets/Title-Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
-#logo img
-{
- height: 27px;
- width: 125px;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-#mylist
-{
-    width:470px;
+
+#navbar {
+    display: flex;
+    align-items: center;
 }
-#showlogo
-{
-height: 30px;
-width: 15px;
-align-items: center;
-margin-top: 200px;
-margin: left 3%;
-    
+
+.navbar {
+    margin-right: 20px;
 }
-#bg-text
-{
-margin-left:6%;
-align-items: center;
-} 
-h1{
-font-size: 120px;
-font-weight: 500px;
-margin-top: 1px;
+
+#logo img {
+    height: 27px;
+    width: auto;
 }
-button{
-    margin-top: 0px;
+
+#bg-text {
+    margin-left: 6%;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 500;
+    margin-top: 1px;
+}
+
+button {
+    margin-top: 10px;
     background-color: white;
     border: none;
     border-radius: 5px;
-    height: 40;
-    width: auto;
+    height: 40px;
     padding: 7px;
-    align-items: center;
 }
-#moreinformation
-{
+
+#moreinformation {
     background-color: rgba(255, 255, 255, 0.605);
     margin-bottom: 25px;
 }
-#play,#more{
-   padding: 2px;
-   align-self: center;
-}
-#moreinfo{
-color: white;
-}
-#add-add
-{
-margin-left: 95%;
-}
-main{
-margin-left: 2%;
-}
-.row1
-{
-height: 115px;  
-justify-content: space-around;
-padding-left: 20px;
-border-radius: 10px;
-} 
 
-#see-again,#top10,#tn,#sf
-{
-padding-left: 2px;
+#play,
+#more {
+    padding: 2px;
 }
-.div2{
-justify-content: space-between;
-height: 150px;
-float: left;
-padding-right: 1px; 
-} 
 
-#Top10
-{
-padding-top: 2%;
-border-radius: 15px;
+#add-add {
+    margin-left: 95%;
 }
-#div1
-{
-padding-left: 50px;
-border-radius: 15px;
-} 
-.thre,.foure
-{
-height: 115px;
-border-radius: 10px;
-float: left;
-justify-content: space-between;
-}  
-#scifi{
+
+main {
+    margin-left: 2%;
+}
+
+.row1 {
+    height: 115px;
+    justify-content: space-around;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+#Top10 {
+    padding-top: 2%;
+    border-radius: 15px;
+}
+
+.div2 {
+    justify-content: space-between;
+    height: 150px;
+    float: left;
+    padding-right: 1px;
+}
+
+#div1 {
+    padding-left: 50px;
+    border-radius: 15px;
+}
+
+.thre,
+.foure {
+    height: 115px;
+    border-radius: 10px;
+    float: left;
+    justify-content: space-between;
+}
+
+#scifi {
     padding-top: 150px;
 }
-#footer
-{
-height: 185px;
-width: 1000px;
-align-items: center;
-padding-left: 11%;
+
+#footer {
+    height: 185px;
+    width: 1000px;
+    align-items: center;
+    padding-left: 11%;
 }
-#search,#giftbox,#bell,#arrow,#see-again,#add,#mi,.arrowmark{
+
+#search,
+#giftbox,
+#bell,
+#arrow,
+#see-again,
+#add,
+#mi,
+.arrowmark {
     filter: brightness(100);
 }
-.arrowmark{
-height: 13px;
-width: 13px;
+
+.arrowmark {
+    height: 13px;
+    width: 13px;
 }
-.connect1{
-filter: brightness(6);
+
+.connect1 {
+    filter: brightness(6);
 }
-#connect1{
-padding-left: 50%;
-padding-top: 150px;
+
+#connect1 {
+    padding-left: 50%;
+    padding-top: 150px;
+}
+/* Add more media queries for further responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    #moreinformation {
+        margin-bottom: 10px;
+    }
+
+    #add-add {
+        margin-left: 90%;
+    }
 }
